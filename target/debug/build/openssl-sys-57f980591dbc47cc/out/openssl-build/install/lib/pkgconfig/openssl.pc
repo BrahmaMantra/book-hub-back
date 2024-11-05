@@ -1,9 +1,0 @@
-prefix=/home/fz/rust_project/Actix/actix/target/debug/build/openssl-sys-57f980591dbc47cc/out/openssl-build/install
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=${prefix}/include 
-
-Name: OpenSSL
-Description: Secure Sockets Layer and cryptography libraries and tools
-Version: 3.4.0
-Requires: libssl libcrypto
