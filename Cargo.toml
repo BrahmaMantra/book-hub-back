@@ -1,5 +1,5 @@
 [package]
-name = "Actix"
+name = "actix"
 version = "0.1.0"
 edition = "2021"
 
@@ -17,3 +17,4 @@ sqlx = { version = "0.8.2",default_features = false,features = [
     "macros",
     "chrono",
 ]}
+actix-cors = "0.7.0"

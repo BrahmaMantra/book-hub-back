@@ -1,4 +1,4 @@
-use actix_web::{get, web, HttpResponse};
+use actix_web::{web, HttpResponse};
 
 use crate::{dbaccess::course::{get_courses_details_db, get_courses_for_teacher_db, post_new_course_db}, error::MyError, models::course::Course, state::AppState};
 

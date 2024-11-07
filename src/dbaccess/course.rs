@@ -52,7 +52,7 @@ pub async fn post_new_course_db(pool: &PgPool, new_course: Course) -> Result<Cou
     .await?;
     Ok(row)
 }
-
+#[allow(unused)]
 pub async fn delete_course_db(pool:&PgPool, teacher_id:i32, course_id:i32) -> Result<String,MyError>{
     let _row = sqlx::query!(
         r#"

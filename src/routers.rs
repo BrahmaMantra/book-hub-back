@@ -1,6 +1,6 @@
 use super::handlers::*;
 use actix_web::web;
-use book::get_books;
+use book::{get_book, get_books};
 use course::{get_course_detail, get_courses_for_teacher, new_course};
 use general::health_check_handler;
 
@@ -22,5 +22,6 @@ pub fn course_routes(cfg: &mut web::ServiceConfig) {
 
 pub fn book_routes(cfg: &mut web::ServiceConfig) {
     cfg.service(web::scope("/library")
-        .route("/{book_id}", web::get().to(get_books)));////curl localhost:8000/library/1
+        .route("", web::get().to(get_books)) //curl localhost:8000/library
+        .route("/{book_id}", web::get().to(get_book)));////curl localhost:8000/library/1
 }

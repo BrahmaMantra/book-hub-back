@@ -1,5 +1,5 @@
-use actix_web::{error, http::StatusCode, HttpResponse, ResponseError};
-use serde::{de, Serialize};
+use actix_web::{error, http::StatusCode, HttpResponse};
+use serde::Serialize;
 use sqlx::Error as SQLxError;
 
 
