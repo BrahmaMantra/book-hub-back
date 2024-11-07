@@ -6,3 +6,5 @@ note.md
 
 /target
 /notebooks
+/.sqlx
+/.idea
