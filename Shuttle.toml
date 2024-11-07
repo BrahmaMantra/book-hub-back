@@ -1,0 +1,6 @@
+[service]
+name = "actix"
+
+[database]
+engine = "postgres"
+url="postgres://fz:qweqwe@localhost:5432/tutorial"
